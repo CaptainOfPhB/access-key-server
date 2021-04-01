@@ -4,9 +4,9 @@ addEventListener('fetch', function (event) {
 
 function handleRequest(event) {
   const response = new Response(
-    {
+    JSON.stringify({
       accessKey: Deno.env.accessKey
-    },
+    }),
     {
       headers: {
         'Content-Type': 'application/json',
