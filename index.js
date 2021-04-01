@@ -9,7 +9,7 @@ function handleRequest(event) {
     },
     {
       headers: {
-        'Content-Type': 'text/plain',
+        'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*'
       }
     });
