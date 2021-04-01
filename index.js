@@ -5,7 +5,7 @@ addEventListener('fetch', function (event) {
 function handleRequest(event) {
   const response = new Response(
     JSON.stringify({
-      accessKey: Deno.env.accessKey
+      accessKey: Deno.env.get('accessKey')
     }),
     {
       headers: {
